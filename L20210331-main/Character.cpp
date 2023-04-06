@@ -1,7 +1,7 @@
 #include "Character.h"
 
-Character::Character(int _PositionY, int _PositionX, float _HP, float _MP, ECharacterType _CharacterType)
-	: HP(_HP), MP(_MP), CharacterType(_CharacterType), PositionY(_PositionY), PositionX(_PositionX)
+Character::Character(std::string _Name, int _PositionY, int _PositionX, float _HP, float _MP, ECharacterType _CharacterType)
+	: Name(_Name), HP(_HP), MP(_MP), CharacterType(_CharacterType), PositionY(_PositionY), PositionX(_PositionX)
 {
 }
 

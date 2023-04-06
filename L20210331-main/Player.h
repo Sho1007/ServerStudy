@@ -4,6 +4,6 @@
 class Player : public Character
 {
 public:
-	Player(int _PositionY, int _PositionX, float _HP = 100.0f, float _MP = 100.0f);
+	Player(std::string _Name, int _PositionY, int _PositionX, float _HP = 100.0f, float _MP = 100.0f);
 };
 

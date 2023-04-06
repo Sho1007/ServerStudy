@@ -1,4 +1,5 @@
 #pragma once
+#include <string>
 enum class ECharacterType
 {
 	None,
@@ -10,12 +11,13 @@ enum class ECharacterType
 class Character
 {
 public:
-	Character(int _PositionY, int _PositionX, float _HP = 100.0f, float _MP = 100.0f, ECharacterType _CharacterType = ECharacterType::None);
+	Character(std::string _Name, int _PositionY, int _PositionX, float _HP = 100.0f, float _MP = 100.0f, ECharacterType _CharacterType = ECharacterType::None);
 
-	void Move(char InputDirection);
-	void Attack(int TargetY, int TargetX, int** Board);
+	virtual void Move(char InputDirection);
+	virtual void Attack(int TargetY, int TargetX, int** Board);
 
 protected:
+	std::string Name;
 	float HP;
 	float MP;
 	ECharacterType CharacterType;

@@ -13,24 +13,48 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\Character">
+      <UniqueIdentifier>{df6472ba-0ff4-4c83-971a-7bce74d0a462}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Character\Player">
+      <UniqueIdentifier>{322fa8e6-2abc-4148-b890-27a901af0cd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Character">
+      <UniqueIdentifier>{6240fba2-989f-4c03-b8e6-7b6f664e09c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Character\Player">
+      <UniqueIdentifier>{9f903e01-f7bc-4060-b2b2-1dd4e151e58e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Character\Monster">
+      <UniqueIdentifier>{6c2e9b88-9fac-4fb0-a7b9-eb99d32e95ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Character\Monster">
+      <UniqueIdentifier>{1c00b8a1-f6e3-437e-b643-cae3fd230451}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Character.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="Player.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Character\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Character.cpp">
+      <Filter>소스 파일\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="Monster.cpp">
+      <Filter>소스 파일\Character\Monster</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Character.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Character</Filter>
     </ClInclude>
     <ClInclude Include="Player.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Character\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Monster.h">
+      <Filter>헤더 파일\Character\Monster</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
